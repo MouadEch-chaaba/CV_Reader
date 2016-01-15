@@ -12,7 +12,10 @@ public class Cv {
 	private ArrayList<Certificate> certifications;
 	private ArrayList<OtherInfosItem> otherInformations;
 	
-	public Cv(){}
+	public Cv(){
+		System.out.println("hahahah");
+		
+	}
 	public Cv(String title,Person owner,ArrayList<Experience> experiences,ArrayList<Language> languages,ArrayList<SkillsDomain> skills,ArrayList<Education> educations,ArrayList<Certificate> certifications,ArrayList<OtherInfosItem> otherInformations){
 		this.title = title;
 		this.owner = owner;
