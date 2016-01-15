@@ -6,7 +6,9 @@ public class SkillsDomain {
 	private String domainName;
 	private ArrayList<SkillsDomainItem> items; 
 	
-	public SkillsDomain(){}
+	public SkillsDomain(){
+		this.items = new ArrayList<SkillsDomainItem>();
+	}
 	public SkillsDomain(String domainName,ArrayList<SkillsDomainItem> items){
 		this.domainName = domainName;
 		this.items = items;
@@ -27,5 +29,9 @@ public class SkillsDomain {
 	
 	public void setItems(ArrayList<SkillsDomainItem> items){
 		this.items = items;
+	}
+	
+	public void addItem(SkillsDomainItem item){
+		this.items.add(item);
 	}
 }
